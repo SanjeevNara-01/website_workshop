@@ -1,0 +1,52 @@
+site_name: Sanjeev      
+theme:                  ##under theme goes everything design related
+    name: material   
+    palette:
+        primary: light green   
+    accent: light blue
+    font:
+        code: Helvetica 
+    logo: assets/images/image_1_logo.jpeg
+    features:
+        - navigation.tabs           #navigation tabs vertically aligned under on the top
+        - navigation.tabs.sticky    #tabs stay visible when scrolling down
+        - navigation.top            #back-to-top button 
+        - navigation.sections       #sections (=.md files) rendered
+        - navigation.expand         #left sidebar will expand all collapsible subsections 
+        - toc.integrate             #"Table of contents" is not separately shown on the right but integrated in the navigation on the left 
+docs_dir: docs  
+nav:
+    - Home: home.md
+    - About: about.md
+    - Education: education.md
+    - Research Interests: research_interests.md
+    - Contact: contact_me.md
+    - CV: cv.md 
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - codehilite
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
